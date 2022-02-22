@@ -11,6 +11,9 @@
 		2372004D27C1B27600AA6F2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372004C27C1B27600AA6F2B /* ContentView.swift */; };
 		2372004F27C1B27E00AA6F2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2372004E27C1B27E00AA6F2B /* Assets.xcassets */; };
 		2372005227C1B27E00AA6F2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2372005127C1B27E00AA6F2B /* Preview Assets.xcassets */; };
+		2372005A27C2FEEA00AA6F2B /* QuestionModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2372005827C2FEEA00AA6F2B /* QuestionModel.xcdatamodeld */; };
+		2372005C27C2FFF800AA6F2B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372005B27C2FFF800AA6F2B /* CoreDataManager.swift */; };
+		2372005F27C4916100AA6F2B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372005E27C4916100AA6F2B /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		2372004C27C1B27600AA6F2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2372004E27C1B27E00AA6F2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2372005127C1B27E00AA6F2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2372005927C2FEEA00AA6F2B /* QuestionModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuestionModel.xcdatamodel; sourceTree = "<group>"; };
+		2372005B27C2FFF800AA6F2B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		2372005E27C4916100AA6F2B /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,10 @@
 		2372004927C1B27600AA6F2B /* I Feel Like Shit */ = {
 			isa = PBXGroup;
 			children = (
+				2372005D27C4913900AA6F2B /* Views */,
 				2372004A27C1B27600AA6F2B /* I_Feel_Like_ShitApp.swift */,
-				2372004C27C1B27600AA6F2B /* ContentView.swift */,
+				2372005B27C2FFF800AA6F2B /* CoreDataManager.swift */,
+				2372005827C2FEEA00AA6F2B /* QuestionModel.xcdatamodeld */,
 				2372004E27C1B27E00AA6F2B /* Assets.xcassets */,
 				2372005027C1B27E00AA6F2B /* Preview Content */,
 			);
@@ -65,6 +73,15 @@
 				2372005127C1B27E00AA6F2B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2372005D27C4913900AA6F2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2372004C27C1B27600AA6F2B /* ContentView.swift */,
+				2372005E27C4916100AA6F2B /* SplashScreenView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +156,9 @@
 			files = (
 				2372004D27C1B27600AA6F2B /* ContentView.swift in Sources */,
 				2372004B27C1B27600AA6F2B /* I_Feel_Like_ShitApp.swift in Sources */,
+				2372005F27C4916100AA6F2B /* SplashScreenView.swift in Sources */,
+				2372005C27C2FFF800AA6F2B /* CoreDataManager.swift in Sources */,
+				2372005A27C2FEEA00AA6F2B /* QuestionModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"I Feel Like Shit/Preview Content\"";
+				DEVELOPMENT_TEAM = 97QZAYL967;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -297,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"I Feel Like Shit/Preview Content\"";
+				DEVELOPMENT_TEAM = 97QZAYL967;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -339,6 +361,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2372005827C2FEEA00AA6F2B /* QuestionModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2372005927C2FEEA00AA6F2B /* QuestionModel.xcdatamodel */,
+			);
+			currentVersion = 2372005927C2FEEA00AA6F2B /* QuestionModel.xcdatamodel */;
+			path = QuestionModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2372003F27C1B27600AA6F2B /* Project object */;
 }

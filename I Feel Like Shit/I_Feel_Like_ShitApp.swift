@@ -11,7 +11,7 @@ import SwiftUI
 struct I_Feel_Like_ShitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreenView()
         }
     }
 }
