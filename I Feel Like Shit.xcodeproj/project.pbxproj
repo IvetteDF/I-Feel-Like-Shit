@@ -14,6 +14,8 @@
 		2372005A27C2FEEA00AA6F2B /* QuestionModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2372005827C2FEEA00AA6F2B /* QuestionModel.xcdatamodeld */; };
 		2372005C27C2FFF800AA6F2B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372005B27C2FFF800AA6F2B /* CoreDataManager.swift */; };
 		2372005F27C4916100AA6F2B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372005E27C4916100AA6F2B /* SplashScreenView.swift */; };
+		2372006127C493A200AA6F2B /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372006027C493A200AA6F2B /* ConfettiView.swift */; };
+		2372006327C4943000AA6F2B /* FiguredOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372006227C4943000AA6F2B /* FiguredOutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		2372005927C2FEEA00AA6F2B /* QuestionModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuestionModel.xcdatamodel; sourceTree = "<group>"; };
 		2372005B27C2FFF800AA6F2B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		2372005E27C4916100AA6F2B /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		2372006027C493A200AA6F2B /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+		2372006227C4943000AA6F2B /* FiguredOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiguredOutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			children = (
 				2372004C27C1B27600AA6F2B /* ContentView.swift */,
 				2372005E27C4916100AA6F2B /* SplashScreenView.swift */,
+				2372006027C493A200AA6F2B /* ConfettiView.swift */,
+				2372006227C4943000AA6F2B /* FiguredOutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2372006327C4943000AA6F2B /* FiguredOutView.swift in Sources */,
+				2372006127C493A200AA6F2B /* ConfettiView.swift in Sources */,
 				2372004D27C1B27600AA6F2B /* ContentView.swift in Sources */,
 				2372004B27C1B27600AA6F2B /* I_Feel_Like_ShitApp.swift in Sources */,
 				2372005F27C4916100AA6F2B /* SplashScreenView.swift in Sources */,
