@@ -9,8 +9,13 @@ import SwiftUI
 
 struct FiguredOutView: View {
     var body: some View {
-        Text("You figured it out!")
-            .font(.title)
+        ZStack {
+            Rectangle()
+                .opacity(0.01)
+                .frame(idealWidth: .infinity, idealHeight: .infinity)
+            Text("You figured it out!")
+                .font(.title)
+        }
     }
 }
 
