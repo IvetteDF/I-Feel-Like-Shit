@@ -11,8 +11,14 @@ struct SingleQuestionView: View {
     
     let question: Question
     
+    @State private var showQuestion: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Toggle(isOn: $showQuestion) {
+            Text(question.text!)
+        }
+        .tint(.blue)
+        .padding(.horizontal, 10.0)
     }
 }
 

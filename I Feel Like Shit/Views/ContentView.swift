@@ -9,6 +9,7 @@
 //after [0, 7, 4, 10, 5, 6, 3, 8, 9, 2, 1]
 
 import SwiftUI
+import CoreData
 
 struct ContentView: View {
     
@@ -26,16 +27,16 @@ struct ContentView: View {
     @State private var pageState: pageState = .questions
         
     private func pickQuestion() {
-        if currentIndex >= Questions.list.count {
+        if currentIndex >= DefaultQuestions.list.count {
             currentIndex = 0
         } else {
-            question = Questions.list[randomInts[currentIndex]]
+            question = DefaultQuestions.list[randomInts[currentIndex]]
             currentIndex += 1
         }
     }
     
     private func randomizer() {
-        for index in 0..<Questions.list.count {
+        for index in 0..<DefaultQuestions.list.count {
             randomInts.append(index)
         }
         randomInts.shuffle()
@@ -49,6 +50,7 @@ struct ContentView: View {
         
         switch self.pageState {
         case .questions:
+            // *** should probably refactor this to be its own View and view file
             VStack {
                 Spacer()
                 Text(question)
@@ -94,31 +96,13 @@ struct ContentView: View {
                     self.pageState = .questions
                 }
         case .settings:
-            SettingsView()
+            SettingsView(coreDM: CoreDataManager(), persistentContainer: NSPersistentContainer(name: "QuestionModel"))
                 .transition(AnyTransition.scale.animation(.easeInOut(duration: 0.5)))
                 .onTapGesture(count: 2) {
                     self.pageState = .questions
                 }
         }
     }
-}
-
-struct Questions {
-    static let list: [String] = [
-    "Am I hungry?",
-    "Is my period starting soon?",
-    "Am I thirsty?",
-    "Am I sleepy?",
-    "Am I too hot?",
-    "Am I too cold?",
-    "Am I sore?",
-    "Am I bored?",
-    "Am I avoiding something?",
-    "Have I NOT gotten sun today?",
-    "Have I NOT socialized today?",
-    "Does my posture hurt?",
-    "Have I NOT moved today?"
-    ]
 }
 
 struct ContentView_Previews: PreviewProvider {

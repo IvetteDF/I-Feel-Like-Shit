@@ -49,9 +49,11 @@ class CoreDataManager {
         let question = Question(context: persistentContainer.viewContext)
         question.text = text
         question.id = UUID()
+        question.defaultQuestion = false
         
         do {
             try persistentContainer.viewContext.save()
+            print("added")
         } catch {
             print("Failed to save question \(error)")
         }

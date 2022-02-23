@@ -18,7 +18,9 @@
 		2372006327C4943000AA6F2B /* FiguredOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372006227C4943000AA6F2B /* FiguredOutView.swift */; };
 		2372006727C5C4AE00AA6F2B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372006627C5C4AE00AA6F2B /* SettingsView.swift */; };
 		2372006927C5C9DC00AA6F2B /* SingleQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372006827C5C9DC00AA6F2B /* SingleQuestionView.swift */; };
-		2372006B27C5CA5100AA6F2B /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372006A27C5CA5100AA6F2B /* QuestionModel.swift */; };
+		2372006D27C5EE1900AA6F2B /* DefaultQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372006C27C5EE1900AA6F2B /* DefaultQuestions.swift */; };
+		2372007527C5F2B600AA6F2B /* Question+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372007327C5F2B600AA6F2B /* Question+CoreDataClass.swift */; };
+		2372007627C5F2B600AA6F2B /* Question+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2372007427C5F2B600AA6F2B /* Question+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +36,9 @@
 		2372006227C4943000AA6F2B /* FiguredOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiguredOutView.swift; sourceTree = "<group>"; };
 		2372006627C5C4AE00AA6F2B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2372006827C5C9DC00AA6F2B /* SingleQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleQuestionView.swift; sourceTree = "<group>"; };
-		2372006A27C5CA5100AA6F2B /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		2372006C27C5EE1900AA6F2B /* DefaultQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultQuestions.swift; sourceTree = "<group>"; };
+		2372007327C5F2B600AA6F2B /* Question+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Question+CoreDataClass.swift"; path = "I Feel Like Shit/Models/Question+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2372007427C5F2B600AA6F2B /* Question+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Question+CoreDataProperties.swift"; path = "I Feel Like Shit/Models/Question+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		2372003E27C1B27600AA6F2B = {
 			isa = PBXGroup;
 			children = (
+				2372007327C5F2B600AA6F2B /* Question+CoreDataClass.swift */,
+				2372007427C5F2B600AA6F2B /* Question+CoreDataProperties.swift */,
 				2372004927C1B27600AA6F2B /* I Feel Like Shit */,
 				2372004827C1B27600AA6F2B /* Products */,
 			);
@@ -67,10 +73,11 @@
 		2372004927C1B27600AA6F2B /* I Feel Like Shit */ = {
 			isa = PBXGroup;
 			children = (
+				2372007227C5F11100AA6F2B /* Models */,
 				2372005D27C4913900AA6F2B /* Views */,
 				2372004A27C1B27600AA6F2B /* I_Feel_Like_ShitApp.swift */,
 				2372005B27C2FFF800AA6F2B /* CoreDataManager.swift */,
-				2372006A27C5CA5100AA6F2B /* QuestionModel.swift */,
+				2372006C27C5EE1900AA6F2B /* DefaultQuestions.swift */,
 				2372005827C2FEEA00AA6F2B /* QuestionModel.xcdatamodeld */,
 				2372004E27C1B27E00AA6F2B /* Assets.xcassets */,
 				2372005027C1B27E00AA6F2B /* Preview Content */,
@@ -97,6 +104,13 @@
 				2372006827C5C9DC00AA6F2B /* SingleQuestionView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2372007227C5F11100AA6F2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,15 +184,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2372006327C4943000AA6F2B /* FiguredOutView.swift in Sources */,
+				2372007627C5F2B600AA6F2B /* Question+CoreDataProperties.swift in Sources */,
 				2372006127C493A200AA6F2B /* ConfettiView.swift in Sources */,
 				2372004D27C1B27600AA6F2B /* ContentView.swift in Sources */,
+				2372007527C5F2B600AA6F2B /* Question+CoreDataClass.swift in Sources */,
 				2372006727C5C4AE00AA6F2B /* SettingsView.swift in Sources */,
 				2372004B27C1B27600AA6F2B /* I_Feel_Like_ShitApp.swift in Sources */,
+				2372006D27C5EE1900AA6F2B /* DefaultQuestions.swift in Sources */,
 				2372005F27C4916100AA6F2B /* SplashScreenView.swift in Sources */,
 				2372005C27C2FFF800AA6F2B /* CoreDataManager.swift in Sources */,
 				2372006927C5C9DC00AA6F2B /* SingleQuestionView.swift in Sources */,
 				2372005A27C2FEEA00AA6F2B /* QuestionModel.xcdatamodeld in Sources */,
-				2372006B27C5CA5100AA6F2B /* QuestionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
